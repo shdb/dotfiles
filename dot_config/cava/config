@@ -1,0 +1,14 @@
+[general]
+autosens = 0
+sensitivity = 100
+
+[color]
+foreground = '#338000'
+
+[input]
+method = pulse
+source = auto
+
+[output]
+channels = stereo
+method   = ncurses
