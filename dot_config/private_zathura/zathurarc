@@ -1,0 +1,6 @@
+set statusbar-fg "#449900"
+set recolor true
+#set recolor-keephue true
+#set recolor-darkcolor "#55CC00"
+set recolor-darkcolor "#449900"
+set recolor-lightcolor "#000000"
