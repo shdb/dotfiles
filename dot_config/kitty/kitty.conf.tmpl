@@ -8,7 +8,11 @@ symbol_map U+E0A0-U+E0A2,U+E0B0-U+E0B3 PowerlineSymbols
 
 update_check_interval 0
 
+{{ if eq .chezmoi.hostname "euclid" -}}
+font_size 11.0
+{{- else -}}
 font_size 16.0
+{{- end }}
 font_family      FiraCodeNerdFontCompleteM-Retina
 bold_font        FiraCodeNerdFontCompleteM-Medium
 
