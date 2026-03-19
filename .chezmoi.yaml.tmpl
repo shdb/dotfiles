@@ -1,4 +1,7 @@
-{{- $hasGUI := promptBoolOnce . "hasGUI" "does this machine have a gui?" -}}
+{{- $hasGUI := false }}
+{{- if ne .chezmoi.username "root" }}
+{{- $hasGUI = promptBoolOnce . "hasGUI" "does this machine have a gui?" -}}
+{{- end }}
 
 {{- if (env "EDITOR" | eq "nvim") -}}
 diff:
