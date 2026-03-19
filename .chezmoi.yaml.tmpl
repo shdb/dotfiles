@@ -1,10 +1,12 @@
+{{- $hasGUI := promptBoolOnce . "hasGUI" "does this machine have a gui?" -}}
+
 {{- if (env "EDITOR" | eq "nvim") -}}
 diff:
   command: nvim
   args:
-  - -d
-  - "{{ "{{ .Destination }}" }}"
-  - "{{ "{{ .Target }}" }}"
+    - -d
+    - "{{ "{{ .Destination }}" }}"
+    - "{{ "{{ .Target }}" }}"
 
 merge:
   command: nvim
@@ -14,3 +16,6 @@ merge:
     - "{{ "{{ .Destination }}" }}"
     - "{{ "{{ .Target }}" }}"
 {{- end }}
+
+data:
+  hasGUI: {{ $hasGUI }}
