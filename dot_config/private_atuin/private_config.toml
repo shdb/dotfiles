@@ -357,3 +357,12 @@ records = true
 ## Make directory expand instead of command:
 # columns = ["duration", "time", { type = "directory", expand = true }, { type = "command", expand = false }]
 columns = ["time", {type = "host", width = 8}, {type = "user", width = 4}, "command"]
+
+[keymap.vim-insert]
+"tab"       = "select-next"
+"shift-tab" = "select-previous"
+
+[keymap.vim-normal]
+"tab"       = "select-next"
+"shift-tab" = "select-previous"
+"space"     = "return-selection"
