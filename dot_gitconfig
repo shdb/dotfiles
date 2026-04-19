@@ -1,0 +1,12 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[diff]
+	tool = icdiff
+[difftool]
+	prompt = false
+[difftool "nvim"]
+  cmd = /usr/bin/nvim -d $LOCAL $REMOTE
+[difftool "icdiff"]
+  cmd = /usr/bin/icdiff --line-numbers --highlight $LOCAL $REMOTE
+[user]
+	email = shadowblade@gmx.ch
