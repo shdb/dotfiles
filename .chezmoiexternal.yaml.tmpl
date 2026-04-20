@@ -1,14 +1,14 @@
 .config/nvim:
   type: git-repo
   url: https://github.com/shdb/nvim
-  refreshPeriod: 168h
+  refreshPeriod: 1h
 .zsh.d:
-  type: "git-repo"
-  url: "https://github.com/shdb/zsh-configs"
-  refreshPeriod: "168h"
+  type: git-repo
+  url: https://github.com/shdb/zsh-configs
+  refreshPeriod: 1h
 {{- if .hasGUI }}
 .config/awesome:
   type: git-repo
   url: https://github.com/shdb/awesome-configs
-  refreshPeriod: 168h
+  refreshPeriod: 1h
 {{- end }}
