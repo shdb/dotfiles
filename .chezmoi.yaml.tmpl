@@ -4,13 +4,6 @@
 {{- end }}
 
 {{- if (env "EDITOR" | eq "nvim") -}}
-diff:
-  command: nvim
-  args:
-    - -d
-    - "{{ "{{ .Destination }}" }}"
-    - "{{ "{{ .Target }}" }}"
-
 merge:
   command: nvim
   args:
