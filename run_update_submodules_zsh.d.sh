@@ -1,4 +1,5 @@
 #!/bin/sh
 
 cd ~/.zsh.d/
-git submodule update --init --recursive
+[ ! -e powerlevel10k/README.md ] && git submodule update --init --recursive
+git submodule update --recursive --remote
